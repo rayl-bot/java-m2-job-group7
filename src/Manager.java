@@ -14,9 +14,11 @@ public class Manager extends Empleado {
 	}
 
 	@Override
-	public double netoAnual(double brutoAnual) {
+	public double netoAnual(double precio) {
 		// TODO Auto-generated method stub
-		return 0;
+		double brutoAnual = precio * 12;
+		double netoAnual = brutoAnual - (brutoAnual * 0.26);
+		return netoAnual;
 	}
 	
 	@Override
