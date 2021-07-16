@@ -16,12 +16,12 @@ public class Volunteer extends Empleado {
 	@Override
 	public double netoAnual(double precio) {
 		// TODO Auto-generated method stub
-		return this.precio*12;
+		return this.precio * 12;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "Nombre: " + nombre + " precio mensual " + totalSalario() + " precio anual: "+ netoAnual(this.precio);
+		return "Nombre: " + nombre + " precio mensual " + totalSalario() + " precio anual: " + netoAnual(this.precio);
 	}
 
 	@Override
@@ -29,5 +29,5 @@ public class Volunteer extends Empleado {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-	
+
 }
