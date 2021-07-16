@@ -18,6 +18,7 @@ public class JobExerciceApp {
 					System.out.println(manager);
 				else
 					throw new OurException(2);
+				System.out.println("Sueldo anual con bonus: " + manager.bonus());
 
 			} else if (emp.equalsIgnoreCase("boss")) {
 				Boss boss = new Boss("Lucas", 1);
@@ -25,6 +26,7 @@ public class JobExerciceApp {
 					System.out.println(boss);
 				else
 					throw new OurException(1);
+				System.out.println("Sueldo anual con bonus: " + boss.bonus());
 
 			} else if (emp.equalsIgnoreCase("senior")) {
 				Employee senior = new Senior("sandra", 1);
@@ -32,6 +34,7 @@ public class JobExerciceApp {
 					System.out.println(senior);
 				else
 					throw new OurException(3);
+				System.out.println("Sueldo anual con bonus: " + senior.bonus());
 
 			} else if (emp.equalsIgnoreCase("mid")) {
 				Employee mid = new Mid("sandra", 1);
@@ -39,6 +42,7 @@ public class JobExerciceApp {
 					System.out.println(mid);
 				else
 					throw new OurException(4);
+				System.out.println("Sueldo anual con bonus: " + mid.bonus());
 
 			} else if (emp.equalsIgnoreCase("junior")) {
 				Employee junior = new Junior("sandra", 1000);
@@ -46,21 +50,22 @@ public class JobExerciceApp {
 					System.out.println(junior);
 				else
 					throw new OurException(5);
+				System.out.println("Sueldo anual con bonus: " + junior.bonus());
 
 			} else {
 				Volunteer volunteer = new Volunteer("sandra", 1000);
 				System.out.println("Es ajut? (si/no) ");
 				String ajut = scanner.nextLine();
 				if (ajut.equals("si"))
-					if(volunteer.precio <= 300)
+					if (volunteer.precio <= 300)
 						System.out.println(volunteer);
 					else
 						throw new OurException(6);
 				else if (ajut.equals("no") && volunteer.precio > 0)
 					throw new OurException();
-				else 
+				else
 					System.out.println(volunteer);
-				
+
 			}
 
 		} catch (OurException e) {
