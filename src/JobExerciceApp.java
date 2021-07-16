@@ -24,7 +24,5 @@ public class JobExerciceApp {
 			Volunteer volunteer = new Volunteer("sandra",2000);
 			System.out.println(volunteer.totalSalario());
 		}
-			
 	}
-
 }
