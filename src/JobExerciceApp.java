@@ -15,35 +15,35 @@ public class JobExerciceApp {
 			if (emp.equalsIgnoreCase("Manager")) {
 				Manager manager = new Manager("Mario", 2000);
 				if (manager.precio >= 3000 && manager.precio <= 5000)
-					System.out.println(manager.totalSalario());
+					System.out.println(manager);
 				else
 					throw new OurException(2);
 
 			} else if (emp.equalsIgnoreCase("boss")) {
 				Boss boss = new Boss("Lucas", 1);
 				if (boss.precio >= 8000)
-					System.out.println(boss.totalSalario());
+					System.out.println(boss);
 				else
 					throw new OurException(1);
 
 			} else if (emp.equalsIgnoreCase("senior")) {
 				Employee senior = new Senior("sandra", 1);
 				if (senior.precio >= 2700 && senior.precio <= 4000)
-					System.out.println(senior.totalSalario());
+					System.out.println(senior);
 				else
 					throw new OurException(3);
 
 			} else if (emp.equalsIgnoreCase("mid")) {
 				Employee mid = new Mid("sandra", 1);
 				if (mid.precio >= 1800 && mid.precio <= 2500)
-					System.out.println(mid.totalSalario());
+					System.out.println(mid);
 				else
 					throw new OurException(4);
 
 			} else if (emp.equalsIgnoreCase("junior")) {
 				Employee junior = new Junior("sandra", 1);
 				if (junior.precio >= 900 && junior.precio <= 1600)
-					System.out.println(junior.totalSalario());
+					System.out.println(junior);
 				else
 					throw new OurException(5);
 
