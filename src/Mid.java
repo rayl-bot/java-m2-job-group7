@@ -14,9 +14,10 @@ public class Mid extends Employee {
 	}
 	
 	@Override
-	public double netoAnual(double brutoAnual) {
-		// TODO Auto-generated method stub
-		return 0;
+	public double netoAnual(double precio) {
+		double brutoAnual = precio * 12;
+		double netoAnual = brutoAnual - (brutoAnual * 0.15);
+		return netoAnual;
 	}
 	
 	@Override
