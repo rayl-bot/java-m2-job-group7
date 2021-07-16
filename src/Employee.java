@@ -25,4 +25,10 @@ public class Employee extends Empleado {
 				+ " precio neto mensual: " + netoAnual(this.precio) / 12 + " precio neto anual: "+ netoAnual(this.precio);
 	}
 
+	@Override
+	public double bonus() {
+		
+		return 0;
+	}
+
 }
