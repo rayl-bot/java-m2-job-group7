@@ -1,6 +1,5 @@
 
 public class Employee extends Empleado {
-
 	/**
 	 * @param nombre
 	 * @param precio
@@ -15,5 +14,5 @@ public class Employee extends Empleado {
 		// TODO Auto-generated method stub
 		return this.precio-(this.precio*0.15);
 	}
-	
+
 }
