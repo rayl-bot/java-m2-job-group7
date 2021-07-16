@@ -11,9 +11,8 @@ public class Boss extends Empleado {
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
 	public double totalSalario() {
-		// TODO Auto-generated method stub
+		
 		return this.precio+(this.precio*0.5);
 	}
 	
