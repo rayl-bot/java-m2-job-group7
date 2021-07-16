@@ -1,4 +1,4 @@
-
+// +8000€
 public class Boss extends Empleado {
 
 	/**
