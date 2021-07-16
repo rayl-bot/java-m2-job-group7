@@ -18,7 +18,11 @@ public class JobExerciceApp {
 					System.out.println(manager);
 				else
 					throw new OurException(2);
+<<<<<<< HEAD
+				System.out.println("Bonus anual: "+manager.bonus());
+=======
 				System.out.println("Sueldo anual con bonus: " + manager.bonus());
+>>>>>>> 5c4a0428cdcf656bc3c5ca9411425c46e649e725
 
 			} else if (emp.equalsIgnoreCase("boss")) {
 				Boss boss = new Boss("Lucas", 1);
@@ -26,32 +30,51 @@ public class JobExerciceApp {
 					System.out.println(boss);
 				else
 					throw new OurException(1);
+<<<<<<< HEAD
+				System.out.println("Bonus anual: "+boss.bonus());
+=======
 				System.out.println("Sueldo anual con bonus: " + boss.bonus());
 
+>>>>>>> 5c4a0428cdcf656bc3c5ca9411425c46e649e725
 			} else if (emp.equalsIgnoreCase("senior")) {
 				Employee senior = new Senior("sandra", 1);
 				if (senior.precio >= 2700 && senior.precio <= 4000)
 					System.out.println(senior);
 				else
 					throw new OurException(3);
+<<<<<<< HEAD
+				System.out.println("Bonus anual: "+senior.bonus());
+				
+=======
 				System.out.println("Sueldo anual con bonus: " + senior.bonus());
 
+>>>>>>> 5c4a0428cdcf656bc3c5ca9411425c46e649e725
 			} else if (emp.equalsIgnoreCase("mid")) {
 				Employee mid = new Mid("sandra", 1);
 				if (mid.precio >= 1800 && mid.precio <= 2500)
 					System.out.println(mid);
 				else
 					throw new OurException(4);
+<<<<<<< HEAD
+				System.out.println("Bonus anual: "+mid.bonus());
+				
+=======
 				System.out.println("Sueldo anual con bonus: " + mid.bonus());
 
+>>>>>>> 5c4a0428cdcf656bc3c5ca9411425c46e649e725
 			} else if (emp.equalsIgnoreCase("junior")) {
 				Employee junior = new Junior("sandra", 1000);
 				if (junior.precio >= 900 && junior.precio <= 1600)
 					System.out.println(junior);
 				else
 					throw new OurException(5);
+<<<<<<< HEAD
+				System.out.println("Bonus anual: "+junior.bonus());
+				
+=======
 				System.out.println("Sueldo anual con bonus: " + junior.bonus());
 
+>>>>>>> 5c4a0428cdcf656bc3c5ca9411425c46e649e725
 			} else {
 				Volunteer volunteer = new Volunteer("sandra", 1000);
 				System.out.println("Es ajut? (si/no) ");

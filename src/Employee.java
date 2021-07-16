@@ -32,4 +32,13 @@ public class Employee extends Empleado {
 		return 0;
 	}
 
+	@Override
+	public double bonus() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	
+
 }

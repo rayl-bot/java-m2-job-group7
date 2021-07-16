@@ -30,8 +30,7 @@ public class Mid extends Employee {
 
 	@Override
 	public double bonus() {
-		// TODO Auto-generated method stub
-		return 0;
+		double brutoAnual = precio * 12;
+		return brutoAnual += brutoAnual * 0.10;
 	}
-
 }
