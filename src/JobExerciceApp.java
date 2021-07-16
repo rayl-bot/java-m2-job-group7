@@ -13,7 +13,7 @@ public class JobExerciceApp {
 		try {
 
 			if (emp.equalsIgnoreCase("Manager")) {
-				Manager manager = new Manager("Mario", 2000);
+				Manager manager = new Manager("Mario", 4000);
 				if (manager.precio >= 3000 && manager.precio <= 5000)
 					System.out.println(manager);
 				else
@@ -41,19 +41,26 @@ public class JobExerciceApp {
 					throw new OurException(4);
 
 			} else if (emp.equalsIgnoreCase("junior")) {
-				Employee junior = new Junior("sandra", 1);
+				Employee junior = new Junior("sandra", 1000);
 				if (junior.precio >= 900 && junior.precio <= 1600)
 					System.out.println(junior);
 				else
 					throw new OurException(5);
 
 			} else {
-				Volunteer volunteer = new Volunteer("sandra", 0);
-				if (volunteer.precio == 0)
-					System.out.println(volunteer.totalSalario());
-				else
+				Volunteer volunteer = new Volunteer("sandra", 1000);
+				System.out.println("Es ajut? (si/no) ");
+				String ajut = scanner.nextLine();
+				if (ajut.equals("si"))
+					if(volunteer.precio <= 300)
+						System.out.println(volunteer);
+					else
+						throw new OurException(6);
+				else if (ajut.equals("no") && volunteer.precio > 0)
 					throw new OurException();
-
+				else 
+					System.out.println(volunteer);
+				
 			}
 
 		} catch (OurException e) {

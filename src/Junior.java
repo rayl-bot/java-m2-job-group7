@@ -10,7 +10,8 @@ public class Junior extends Employee {
 	@Override
 	public double totalSalario() {
 		// TODO Auto-generated method stub
-		return this.precio-(this.precio*0.05);
+		this.precio = this.precio-(this.precio*0.05);
+		return this.precio;
 	}
 	
 	@Override
@@ -22,7 +23,13 @@ public class Junior extends Employee {
 	
 	@Override
 	public String toString() {
-		return "Nombre: " + nombre + " precio bruto mensual " + precio + " precio bruto anual: " + totalSalario()
+		return "Nombre: " + nombre + " precio bruto mensual " + precio + " precio bruto anual: " + totalSalario()*12
 				+ " precio neto mensual: " + netoAnual(this.precio) / 12 + " precio neto anual: "+ netoAnual(this.precio);
+	}
+	
+	@Override
+	public double bonus() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }

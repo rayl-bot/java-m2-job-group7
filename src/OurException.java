@@ -37,6 +37,9 @@ public class OurException extends Exception {
 		case 5:
 			message = "Ha de cobrar més de 900 pero menys de 1600€.";
 			break;
+		case 6:
+			message = "El Volunteer no puede cobrar mas de 300 mensuales.";
+			break;
 
 		default:
 			message = "El Volunteer no cobra.";

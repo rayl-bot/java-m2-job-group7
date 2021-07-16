@@ -23,5 +23,11 @@ public class Volunteer extends Empleado {
 	public String toString() {
 		return "Nombre: " + nombre + " precio mensual " + totalSalario() + " precio anual: "+ netoAnual(this.precio);
 	}
+
+	@Override
+	public double bonus() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 }

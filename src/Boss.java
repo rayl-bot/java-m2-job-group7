@@ -23,8 +23,15 @@ public class Boss extends Empleado {
 
 	@Override
 	public String toString() {
-		return "Nombre: " + nombre + " precio bruto mensual " + precio + " precio bruto anual: " + totalSalario()
+		return "Nombre: " + nombre + " precio bruto mensual " + precio + " precio bruto anual: " + totalSalario()*12
 				+ " precio neto mensual: " + netoAnual(this.precio) / 12 + " precio neto anual: "+ netoAnual(this.precio);
+	}
+
+	@Override
+	public double bonus() {
+		// TODO Auto-generated method stub
+		double brutoAnual = precio * 12;
+		return brutoAnual+=brutoAnual*0.10;
 	}
 
 }

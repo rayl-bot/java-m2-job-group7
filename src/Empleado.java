@@ -15,6 +15,6 @@ public abstract class Empleado {
 	}
 	
 	public abstract double totalSalario();
-	
 	public abstract double netoAnual(double brutoAnual);
+	public abstract double bonus();
 }
