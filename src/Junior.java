@@ -1,6 +1,10 @@
 
 public class Junior extends Employee {
 
+	/**
+	 * @param nombre
+	 * @param precio
+	 */
 	public Junior(String nombre, int precio) {
 		super(nombre, precio);
 		// TODO Auto-generated constructor stub
