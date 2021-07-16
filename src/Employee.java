@@ -13,7 +13,7 @@ public class Employee extends Empleado {
 	@Override
 	public double totalSalario() {
 		// TODO Auto-generated method stub
-		return 0;
+		return this.precio-(this.precio*0.15);
 	}
 	
 }
