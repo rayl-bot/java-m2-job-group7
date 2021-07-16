@@ -10,21 +10,19 @@ public class JobExerciceApp {
 		String emp = scanner.nextLine();
 		
 		if(emp.equalsIgnoreCase("Manager")) {
-			Manager manager = new Manager("Mario",2000);
-			System.out.println(manager.totalSalario());
+			//Manager manager = new Manager("Mario",2000);
+			//System.out.println(manager.totalSalario());
 			
 		}else if(emp.equalsIgnoreCase("boss")) {
-			Boss boss = new Boss("Lucas",8000);
-			System.out.println(boss.totalSalario());
+			//Boss boss = new Boss("Lucas",8000);
+			//System.out.println(boss.totalSalario());
 			
 		}else if(emp.equalsIgnoreCase("employee")) {
-			Employee employee = new Employee("sandra",2000);
-			System.out.println(employee.totalSalario());
+			//Employee employee = new Employee("sandra",2000);
+			//System.out.println(employee.totalSalario());
 		}else {
-			Volunteer volunteer = new Volunteer("sandra",2000);
-			System.out.println(volunteer.totalSalario());
+			//Volunteer volunteer = new Volunteer("sandra",2000);
+			//System.out.println(volunteer.totalSalario());
 		}
-			
 	}
-
 }
