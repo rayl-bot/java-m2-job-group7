@@ -1,7 +1,7 @@
-// asd
+
 public abstract class Empleado {
 	protected String nombre;
-	protected int precio;
+	protected double precio;
 	
 	/**
 	 * @param nombre
@@ -11,8 +11,10 @@ public abstract class Empleado {
 		super();
 		this.nombre = nombre;
 		this.precio = precio;
+		netoAnual(precio);
 	}
 	
 	public abstract double totalSalario();
 	
+	public abstract double netoAnual(double brutoAnual);
 }
