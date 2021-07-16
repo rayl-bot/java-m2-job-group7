@@ -18,6 +18,7 @@ public class JobExerciceApp {
 					System.out.println(manager);
 				else
 					throw new OurException(2);
+				System.out.println("Bonus anual: "+manager.bonus());
 
 			} else if (emp.equalsIgnoreCase("boss")) {
 				Boss boss = new Boss("Lucas", 1);
@@ -25,28 +26,31 @@ public class JobExerciceApp {
 					System.out.println(boss);
 				else
 					throw new OurException(1);
-
+				System.out.println("Bonus anual: "+boss.bonus());
 			} else if (emp.equalsIgnoreCase("senior")) {
 				Employee senior = new Senior("sandra", 1);
 				if (senior.precio >= 2700 && senior.precio <= 4000)
 					System.out.println(senior);
 				else
 					throw new OurException(3);
-
+				System.out.println("Bonus anual: "+senior.bonus());
+				
 			} else if (emp.equalsIgnoreCase("mid")) {
 				Employee mid = new Mid("sandra", 1);
 				if (mid.precio >= 1800 && mid.precio <= 2500)
 					System.out.println(mid);
 				else
 					throw new OurException(4);
-
+				System.out.println("Bonus anual: "+mid.bonus());
+				
 			} else if (emp.equalsIgnoreCase("junior")) {
 				Employee junior = new Junior("sandra", 1000);
 				if (junior.precio >= 900 && junior.precio <= 1600)
 					System.out.println(junior);
 				else
 					throw new OurException(5);
-
+				System.out.println("Bonus anual: "+junior.bonus());
+				
 			} else {
 				Volunteer volunteer = new Volunteer("sandra", 1000);
 				System.out.println("Es ajut? (si/no) ");
