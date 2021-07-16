@@ -15,8 +15,9 @@ public class Senior extends Employee {
 	
 	@Override
 	public double netoAnual(double precio) {
-		// TODO Auto-generated method stub
-		return 0;
+		double brutoAnual = precio * 12;
+		double netoAnual = brutoAnual - (brutoAnual * 0.24);
+		return netoAnual;
 	}
 	
 	@Override
