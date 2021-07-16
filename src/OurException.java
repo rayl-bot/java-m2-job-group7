@@ -17,10 +17,10 @@ public class OurException extends Exception {
 		super();
 		this.code = code;
 	}
-	
+
 	public String getMessage() {
 		String message = "";
-		
+
 		switch (code) {
 		case 1:
 			message = "Ha de cobrar més de 8000€.";
@@ -45,8 +45,8 @@ public class OurException extends Exception {
 			message = "El Volunteer no cobra.";
 			break;
 		}
-		
+
 		return message;
 	}
-	
+
 }
