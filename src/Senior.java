@@ -1,6 +1,6 @@
 
 public class Senior extends Employee {
-
+	
 	/**
 	 * @param nombre
 	 * @param precio
