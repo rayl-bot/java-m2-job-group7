@@ -2,6 +2,7 @@
 public class Boss extends Empleado {
 
 	/**
+	 * Constructor Boss
 	 * @param nombre
 	 * @param precio
 	 */
