@@ -27,6 +27,7 @@ public class Volunteer extends Empleado {
 	@Override
 	public double bonus() {
 		// TODO Auto-generated method stub
+		//El voluntario no tiene bonus
 		return 0;
 	}
 

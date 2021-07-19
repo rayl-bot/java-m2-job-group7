@@ -37,7 +37,7 @@ public class JobExerciceApp {
 				System.out.println("Sueldo anual con bonus: " + senior.bonus());
 
 			} else if (emp.equalsIgnoreCase("mid")) {
-				Employee mid = new Mid("sandra", 1);
+				Employee mid = new Mid("sandra", 1900);
 				if (mid.precio >= 1800 && mid.precio <= 2500)
 					System.out.println(mid);
 				else
@@ -53,15 +53,20 @@ public class JobExerciceApp {
 				System.out.println("Sueldo anual con bonus: " + junior.bonus());
 
 			} else {
-				Volunteer volunteer = new Volunteer("sandra", 1000);
+
 				System.out.println("Es ajut? (si/no) ");
 				String ajut = scanner.nextLine();
-				if (ajut.equals("si"))
-					if (volunteer.precio <= 300)
+				Volunteer volunteer = new Volunteer("sandra", 0);
+
+				if (ajut.equals("si")) {
+					System.out.println("Cuanto cobras?");
+					int sala = scanner.nextInt();
+					if (sala <= 300) {
+						volunteer.precio = sala;
 						System.out.println(volunteer);
-					else
+					} else
 						throw new OurException(6);
-				else if (ajut.equals("no") && volunteer.precio > 0)
+				} else if (ajut.equals("no") && volunteer.precio > 0)
 					throw new OurException();
 				else
 					System.out.println(volunteer);
