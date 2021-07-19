@@ -2,16 +2,18 @@ import java.util.*;
 
 // principal
 public class JobExerciceApp {
-
+	// Objeto scanner para pedir por pantalla
+	static Scanner scanner = new Scanner(System.in);
+	
 	public static void main(String[] args) {
-		// Objeto scanner para pedir por pantalla
-		Scanner scanner = new Scanner(System.in);
 		// TODO Auto-generated method stub
 		System.out.println("Tipo de empleado: Manager/Boss/Volunteer/Senior/Junior/Mid");
 		String emp = scanner.nextLine();
-
+		showDates(emp);
+	}
+	
+	public static void showDates(String emp) {
 		try {
-
 			if (emp.equalsIgnoreCase("Manager")) {
 				Manager manager = new Manager("Mario", 4000);
 				if (manager.precio >= 3000 && manager.precio <= 5000)
@@ -53,11 +55,9 @@ public class JobExerciceApp {
 				System.out.println("Sueldo anual con bonus: " + junior.bonus());
 
 			} else {
-
 				System.out.println("Es ajut? (si/no) ");
 				String ajut = scanner.nextLine();
 				Volunteer volunteer = new Volunteer("Jesus", 0);
-
 				if (ajut.equals("si")) {
 					System.out.println("Cuanto cobras?");
 					int sala = scanner.nextInt();
@@ -66,17 +66,12 @@ public class JobExerciceApp {
 						System.out.println(volunteer);
 					} else
 						throw new OurException(6);
-				} else if (ajut.equals("no") && volunteer.precio > 0)
-					throw new OurException();
-				else
+				} else
 					System.out.println(volunteer);
-
 			}
-
 		} catch (OurException e) {
 			// TODO: handle exception
 			System.out.println(e.getMessage());
 		}
-
 	}
 }
