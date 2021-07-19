@@ -29,7 +29,7 @@ public class JobExerciceApp {
 				System.out.println("Sueldo anual con bonus: " + boss.bonus());
 
 			} else if (emp.equalsIgnoreCase("senior")) {
-				Employee senior = new Senior("sandra", 1);
+				Employee senior = new Senior("Maria", 1);
 				if (senior.precio >= 2700 && senior.precio <= 4000)
 					System.out.println(senior);
 				else
@@ -37,7 +37,7 @@ public class JobExerciceApp {
 				System.out.println("Sueldo anual con bonus: " + senior.bonus());
 
 			} else if (emp.equalsIgnoreCase("mid")) {
-				Employee mid = new Mid("sandra", 1900);
+				Employee mid = new Mid("Sandra", 1900);
 				if (mid.precio >= 1800 && mid.precio <= 2500)
 					System.out.println(mid);
 				else
@@ -45,7 +45,7 @@ public class JobExerciceApp {
 				System.out.println("Sueldo anual con bonus: " + mid.bonus());
 
 			} else if (emp.equalsIgnoreCase("junior")) {
-				Employee junior = new Junior("sandra", 1000);
+				Employee junior = new Junior("Antonia", 1000);
 				if (junior.precio >= 900 && junior.precio <= 1600)
 					System.out.println(junior);
 				else
@@ -56,7 +56,7 @@ public class JobExerciceApp {
 
 				System.out.println("Es ajut? (si/no) ");
 				String ajut = scanner.nextLine();
-				Volunteer volunteer = new Volunteer("sandra", 0);
+				Volunteer volunteer = new Volunteer("Jesus", 0);
 
 				if (ajut.equals("si")) {
 					System.out.println("Cuanto cobras?");
