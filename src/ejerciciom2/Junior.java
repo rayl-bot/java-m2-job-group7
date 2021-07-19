@@ -1,7 +1,8 @@
+package ejerciciom2;
 
-public class Mid extends Employee {
+public class Junior extends Employee {
 
-	public Mid(String nombre, int precio) {
+	public Junior(String nombre, int precio) {
 		super(nombre, precio);
 		// TODO Auto-generated constructor stub
 		netoAnual(precio);
@@ -10,14 +11,14 @@ public class Mid extends Employee {
 	@Override
 	public double totalSalario() {
 		// TODO Auto-generated method stub
-		this.precio = this.precio - (this.precio * 0.1);
+		this.precio = this.precio - (this.precio * 0.05);
 		return this.precio;
 	}
 
 	@Override
 	public double netoAnual(double precio) {
 		double brutoAnual = precio * 12;
-		double netoAnual = brutoAnual - (brutoAnual * 0.15);
+		double netoAnual = brutoAnual - (brutoAnual * 0.02);
 		return netoAnual;
 	}
 

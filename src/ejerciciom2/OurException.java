@@ -1,3 +1,4 @@
+package ejerciciom2;
 
 public class OurException extends Exception {
 	private int code;

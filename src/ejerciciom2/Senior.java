@@ -1,7 +1,8 @@
+package ejerciciom2;
 
-public class Manager extends Empleado {
+public class Senior extends Employee {
 
-	public Manager(String nombre, int precio) {
+	public Senior(String nombre, int precio) {
 		super(nombre, precio);
 		// TODO Auto-generated constructor stub
 		netoAnual(precio);
@@ -10,14 +11,14 @@ public class Manager extends Empleado {
 	@Override
 	public double totalSalario() {
 		// TODO Auto-generated method stub
-		return this.precio + (this.precio * 0.1);
+		this.precio = super.totalSalario();
+		return this.precio;
 	}
 
 	@Override
 	public double netoAnual(double precio) {
-		// TODO Auto-generated method stub
 		double brutoAnual = precio * 12;
-		double netoAnual = brutoAnual - (brutoAnual * 0.26);
+		double netoAnual = brutoAnual - (brutoAnual * 0.24);
 		return netoAnual;
 	}
 
@@ -30,9 +31,7 @@ public class Manager extends Empleado {
 
 	@Override
 	public double bonus() {
-		// TODO Auto-generated method stub
 		double brutoAnual = precio * 12;
 		return brutoAnual += brutoAnual * 0.10;
 	}
-
 }

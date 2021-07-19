@@ -1,3 +1,4 @@
+package ejerciciom2;
 import java.util.*;
 
 // principal
